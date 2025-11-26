@@ -715,6 +715,202 @@
             color: var(--blue-500);
         }
 
+        /* Pioneros Section */
+        .pioneros-section {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pioneros-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        .pioneros-section .section-header {
+            position: relative;
+            z-index: 1;
+        }
+
+        .pioneros-section .section-label {
+            background: rgba(255, 255, 255, 0.15);
+            color: #c4b5fd;
+        }
+
+        .pioneros-section .section-title {
+            color: white;
+        }
+
+        .pioneros-section .section-desc {
+            color: #c4b5fd;
+        }
+
+        .pioneros-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            font-weight: 700;
+            font-size: 0.85rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            animation: pulse-badge 2s infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .pioneros-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pioneros-intro {
+            text-align: center;
+            color: #e0e7ff;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pioneros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .pionero-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pionero-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .pionero-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #8B5CF6, #A855F7);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .pionero-icon .icon {
+            width: 28px;
+            height: 28px;
+            color: white;
+        }
+
+        .pionero-card h4 {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .pionero-card p {
+            color: #c4b5fd;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        .pioneros-requirements {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .pioneros-requirements h4 {
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .requirements-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .requirement-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #e0e7ff;
+            font-size: 0.9rem;
+        }
+
+        .requirement-item .icon {
+            width: 18px;
+            height: 18px;
+            color: #a78bfa;
+        }
+
+        .pioneros-cta {
+            text-align: center;
+        }
+
+        .pioneros-cta .btn {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .pioneros-cta .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
+        }
+
+        .pioneros-cta .btn .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .pioneros-spots {
+            margin-top: 1rem;
+            color: #fbbf24;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         /* Pricing Section */
         .pricing-grid {
             display: grid;
@@ -1392,6 +1588,7 @@
             </a>
             <nav class="nav-desktop">
                 <a href="#modulos" class="nav-link">Módulos</a>
+                <a href="#pioneros" class="nav-link" style="color: #8B5CF6; font-weight: 600;">Pioneros</a>
                 <a href="#precios" class="nav-link">Precios</a>
                 <a href="#beneficios" class="nav-link">Beneficios</a>
                 <a href="#faq" class="nav-link">FAQ</a>
@@ -1405,6 +1602,7 @@
         </div>
         <nav class="mobile-nav" id="mobileNav">
             <a href="#modulos" class="nav-link">Módulos</a>
+            <a href="#pioneros" class="nav-link" style="color: #8B5CF6; font-weight: 600;">Pioneros</a>
             <a href="#precios" class="nav-link">Precios</a>
             <a href="#beneficios" class="nav-link">Beneficios</a>
             <a href="#faq" class="nav-link">FAQ</a>
@@ -1700,6 +1898,104 @@
             <div class="function-badge">
                 <span class="icon"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></span>
                 Sincronización Automática
+            </div>
+        </div>
+    </section>
+
+    <!-- Pioneros Section -->
+    <section class="section pioneros-section" id="pioneros">
+        <div class="section-header">
+            <div class="pioneros-badge">
+                <span class="icon" style="width:16px;height:16px;">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/></svg>
+                </span>
+                Solo 30 cupos disponibles
+            </div>
+            <span class="section-label">Oportunidad Exclusiva</span>
+            <h2 class="section-title">Conviértete en Pionero RC</h2>
+            <p class="section-desc">Únete al grupo selecto de profesionales que están dando forma al futuro del análisis conductual</p>
+        </div>
+
+        <div class="pioneros-content">
+            <p class="pioneros-intro">
+                Buscamos <strong>30 profesionales comprometidos</strong> que quieran probar intensivamente nuestra plataforma durante la fase beta.
+                A cambio de tu valioso feedback, recibirás beneficios exclusivos que no estarán disponibles después del lanzamiento oficial.
+            </p>
+
+            <div class="pioneros-grid">
+                <div class="pionero-card">
+                    <div class="pionero-icon">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </span>
+                    </div>
+                    <h4>Plan Premium Gratis de por Vida</h4>
+                    <p>Acceso completo a todas las funciones premium sin costo, para siempre, cuando la app esté lista</p>
+                </div>
+
+                <div class="pionero-card">
+                    <div class="pionero-icon">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                        </span>
+                    </div>
+                    <h4>Capacitaciones Exclusivas</h4>
+                    <p>Formación continua por parte de IFOTEC sobre análisis conductual y uso avanzado de la plataforma</p>
+                </div>
+
+                <div class="pionero-card">
+                    <div class="pionero-icon">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        </span>
+                    </div>
+                    <h4>Comunidad Privada</h4>
+                    <p>Grupo exclusivo de trabajo con otros profesionales y contacto directo con el equipo de desarrollo</p>
+                </div>
+
+                <div class="pionero-card">
+                    <div class="pionero-icon">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </span>
+                    </div>
+                    <h4>Influencia en el Desarrollo</h4>
+                    <p>Tus sugerencias y feedback tendrán impacto directo en las nuevas funcionalidades de la app</p>
+                </div>
+            </div>
+
+            <div class="pioneros-requirements">
+                <h4>Lo que esperamos de ti</h4>
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </span>
+                        Uso activo de la plataforma
+                    </div>
+                    <div class="requirement-item">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </span>
+                        Reportar errores y sugerencias
+                    </div>
+                    <div class="requirement-item">
+                        <span class="icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </span>
+                        Participar en capacitaciones
+                    </div>
+                </div>
+            </div>
+
+            <div class="pioneros-cta">
+                <a href="https://wa.me/51965991036?text=%C2%A1Hola!%20Quiero%20unirme%20al%20programa%20Pioneros%20RC.%0A%0ANombre%20completo%3A%20%0ACorreo%20electr%C3%B3nico%3A%20" class="btn" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </span>
+                    Quiero unirme a Pioneros RC
+                </a>
+                <p class="pioneros-spots">Cupos limitados - No pierdas esta oportunidad única</p>
             </div>
         </div>
     </section>
